@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="momo.css">
+  <style>
+
+
+  </style>
+</head>
+
+<body onload="UpdateDate();">
+  <!--top nav html codes-->
+  <div class="topnav" id="MyTopnav">
+    <a href="../Cattring/cattring.html" class="active">Home</a>
+    <input type="text" name="search" placeholder="Search..." class="find">
+    <a href="../Contact/contact.html" class="cont">Contact</a>
+    <a href="../Cart/cart.html" class="new">Menu</a>
+    <a href="../Momo/momo.html" class="about">About</a>
+    <img class="cart" id="CARTS" src="../images/cart1.png">
+    <a href="javascript:void(0);" class="icon" onclick="responsive()">
+      <i class="bars">&#9776</i>
+    </a>
+  </div>
+
+  <!--below top nav html codes-->
+  <div class="BelowNav" id="NavBelow">
+    <h1 class="h1tag" id="tagh1">
+      <marquee>
+        <a href="#momo" class="MOMO" id="moMO">MOMO/s</a>
+      </marquee>
+    </h1>
+  </div>
+
+  <!--about-->
+  <div class="image">
+    <img src="../images/m4.jpg">
+    <h2>ABOUT MOMO</h2>
+    <h4>Tradition since 2024</h4>
+    <p>The MO:MO was fouund in Lahan,Raghunathpur,Nepal.
+      </br>
+      This delicious MO:MO is one of best recipie by
+      </br>
+      Mr.Chandan in his only little kitchen where he is
+      </br>
+      Master Chef.
+    </p>
+  </div>
+
+
+  <!--Modal deliver cart-->
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>HOME DELIVERY</h2>
+      </div>
+      <div class="modal-body">
+        <form action="/action_page.php" target="_blank" class="FormFill" autocomplete="off">
+          <p>
+            <input class="InputName" id="NameInput" type="text" placeholder="NAME" required name="NAME">
+          </p>
+
+          <p>
+            <input class="InputPeople" id="PeopleInput" type="number" placeholder="How Many People" required
+              name="PEOPLE">
+          </p>
+
+          <p>
+            <input type="text" id="DATE" class="InputDate">
+          </p>
+
+          <div class="DirectOrder">
+            <select name="MenuList">
+              <option id="MenuOrder" class="opt" value="Select From Menu-List" id="orderset" selected>Order From
+                Menu-List</option>
+              <option class="opt" value="Fried Momos">Fried Momos</option>
+              <option class="opt" value="Tandoori Momos">Tandoori Momos</option>
+              <option class="opt" value="Steamed Momos">Steamed Momos</option>
+              <option class="opt" value="Chocolate Momos">Chocolate Momos</option>
+              <option class="opt" value="Chilly Momos">Chilly Momos</option>
+              <option class="opt" value="Kothe Momos">Kothe Momos</option>
+              <option class="opt" value="Soup Momos">Soup Momos</option>
+              <option class="opt" value="Cheese Momos">Cheese Momos</option>
+              <option class="opt" value="Qeema Momos">Qeema Momos</option>
+              <option class="opt" value="Chicken Momos">Chicken Momos</option>
+              <option class="opt" value="Veg Momos">Veg Momos</option>
+              <option class="opt" value="Fish Momos">Fish Momos</option>
+              <option class="opt" value="Jhol Momos">Jhol Momos</option>
+              <option class="opt" value="Shogo Shabril Momos">Shogo Shabril Momos</option>
+              <option class="opt" value="Green Momos">Green Momos</option>
+            </select>
+          </div>
+
+          <p>
+            <input class="InputMessage" type="text"
+              Placeholder="SPECIAL REQUIREMENTS/ HOME DELIVERY/ TABLE BOOKING/ SPECIFY" required name="message"
+              id="default">
+          </p>
+
+          <P>
+            <button class="SendMessage" id="MessageSend" type="submit" onclick=DefaultValue();>SEND MESSAGE</button>
+          </P>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+
+  <script src="momo.js"></script>
+
+</body>
+
+</html>

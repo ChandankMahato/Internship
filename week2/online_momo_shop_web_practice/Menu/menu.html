@@ -1,0 +1,95 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+  <link rel="stylesheet" href="./menu.css">
+</head>
+
+<body>
+  <!--top nav html codes-->
+  <div class="topnav" id="MyTopnav">
+    <a href="../Cattring/cattring.html" class="active">Home</a>
+    <input type="text" name="search" placeholder="Search..." class="find">
+    <a href="../Contact/contact.html" class="cont">Contact</a>
+    <a href="../Cart/cart.html" class="new">Menu</a>
+    <a href="../Momo/momo.html" class="about">About</a>
+    <img class="cart" id="CARTS" src="../images/cart1.png">
+    <a href="javascript:void(0);" class="icon" onclick="responsive()">
+      <i class="bars">&#9776</i>
+    </a>
+  </div>
+
+  <!--below top nav html codes-->
+  <div class="BelowNav" id="NavBelow">
+    <h1 class="h1tag" id="tagh1">
+      <marquee>
+        <a href="#momo" class="MOMO" id="moMO">MOMO/s</a>
+      </marquee>
+    </h1>
+  </div>
+
+  <!--Modal-->
+  <div id="MyModal" id="Modal">
+    <div class="ModalContent">
+      <div class="ModalHeader">
+        <span class="Close">&times;</span>
+        <h1 class="ContactText">Contact</h1>
+      </div>
+
+      <div class="ModalBody">
+
+        <form action="/action_page.php" target="_blank" class="FormFill" autocomplete="off">
+          <p>
+            <input class="InputName" type="text" placeholder="NAME" required name="NAME">
+          </p>
+
+          <p>
+            <input class="InputPeople" type="number" placeholder="How Many People" required name="PEOPLE">
+          </p>
+
+          <p>
+            <input type="text" id="DATE" class="InputDate">
+          </p>
+
+          <div class="DirectOrder">
+            <select name="MenuList">
+              <option class="opt" value="Select From Menu-List" id="orderset" selected>Order From Menu-List</option>
+              <option class="opt" value="Fried Momos">Fried Momos</option>
+              <option class="opt" value="Tandoori Momos">Tandoori Momos</option>
+              <option class="opt" value="Steamed Momos">Steamed Momos</option>
+              <option class="opt" value="Chocolate Momos">Chocolate Momos</option>
+              <option class="opt" value="Chilly Momos">Chilly Momos</option>
+              <option class="opt" value="Kothe Momos">Kothe Momos</option>
+              <option class="opt" value="Soup Momos">Soup Momos</option>
+              <option class="opt" value="Cheese Momos">Cheese Momos</option>
+              <option class="opt" value="Qeema Momos">Qeema Momos</option>
+              <option class="opt" value="Chicken Momos">Chicken Momos</option>
+              <option class="opt" value="Veg Momos">Veg Momos</option>
+              <option class="opt" value="Fish Momos">Fish Momos</option>
+              <option class="opt" value="Jhol Momos">Jhol Momos</option>
+              <option class="opt" value="Shogo Shabril Momos">Shogo Shabril Momos</option>
+              <option class="opt" value="Green Momos">Green Momos</option>
+            </select>
+          </div>
+
+          <p>
+            <input class="InputMessage" type="text"
+              Placeholder="SPECIAL REQUIREMENTS/ HOME DELIVERY/ TABLE BOOKING/ SPECIFY" required name="message"
+              id="default">
+          </p>
+
+          <div class="ModalFooter">
+            <button class="SendMessage" id="MessageSend" type="submit" onclick=DefaultValue();>SEND MESSAGE</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="menu.js"></script>
+</body>
+
+</html>
