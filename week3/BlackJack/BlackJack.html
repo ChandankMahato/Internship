@@ -1,0 +1,53 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="BlackJack.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>BLACK JACK GAME</h1>
+        <h2 id="result"><span>Let's Play</span></h2>
+
+        <div class="flex-box-bj-row-1" id="challenge-1">
+            <div id="your_box">
+                <h2>YOU:<span id="your_result">0</span></h2>
+            </div>
+
+            <div id="bot_box">
+                <h2>DEALER:<span id="bot_result">0</span></h2>
+            </div>
+        </div>
+
+        <div class="flex-box-bj-row-2" id="challenge-2">
+            <div id="button">
+                <input class="btn-1" id="btn-1-bj" type="button" value="HIT">
+                <input class="btn-2" id="btn-2-bj" type="button" value="STAND">
+                <input class="btn-3" id="btn-3-bj" type="button" value="DEAL">
+            </div>
+        </div>
+
+        <div class="flex-box-bj-row-3" id="challenge-3">
+            <table class="table">
+                <tr>
+                    <th>WINS</th>
+                    <th>LOSES</th>
+                    <th>DRAWS</th>
+                </tr>
+
+                <tr>
+                    <td><span id="wins_data">0</span></td>
+                    <td><span id="loses_data">0</span></td>
+                    <td><span id="draws_data">0</span></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="BlackJack.js"></script>
+</body>
+
+</html>

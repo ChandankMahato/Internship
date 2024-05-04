@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>challenge</title>
+    <link rel="stylesheet" href="./game1.css">
+</head>
+
+<body>
+    <div class="container-1">
+        <h2>Challenge 1:Your Age in Days</h2>
+        <div class="flex-box-container-1">
+            <button class="btn-primary" onclick="ageInDays()">Click Me</button>
+            <button class="btn-secondary" onclick="reset()">reset</button>
+        </div>
+        <div class="flex-box-container-1">
+            <div id="flex-box-result"></div>
+        </div>
+    </div>
+
+    <div class="container-2">
+        <h2>Challenge 2:Cat Generator</h2>
+        <button class="btn-third" id="cat-generator" onclick="generatecat()">Generate Cat</button>
+        <div class="flex-box-container-2" id="flex-cat-gen"></div>
+    </div>
+
+    <div class="container-3">
+        <h2>Challenge 3:Rock, Paper, Scissors</h2>
+        <div class="flex-box-raps" id="Challenge-3">
+            <img id=rock src="./images/rock.png" onclick="rpsGame(this)">
+            <img id=paper src="./images/paper.png" onclick="rpsGame(this)">
+            <img id=scissors src="./images/scissor.webp" onclick="rpsGame(this)">
+        </div>
+        <button class="RRSReset" id="RRS-Reset-btn" onclick="ResetRRS()">Reset</button>
+    </div>
+
+    <div class="container-4">
+        <h2 id="change-my-color">Challenge 4:CHANGE THE COLOR OF ALL BUTTONS!</h2>
+        <div class="flex-box-ccb" id="challenge-4">
+            <form action="" class="design">
+                <select name="dropdown" id="background" onchange="buttonColorChange(this)">
+                    <option value="random">Random</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="gray">Gray</option>
+                    <option value="tomato">Tomato</option>
+                    <option value="orange">Orange</option>
+                    <option value="blue">Blue</option>
+                    <option value="reset">Reset</option>
+                </select>
+            </form>
+
+            <button class="btn-1">Wee!</button>
+            <button class="btn-2">Yahoo!</button>
+            <button class="btn-3">Google!</button>
+            <button class="btn-4">Facebook</button>
+
+        </div>
+    </div>
+    <script src="game1.js"></script>
+</body>
+
+</html>
