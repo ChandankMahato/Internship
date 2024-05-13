@@ -1,0 +1,20 @@
+[{
+category: "1"
+image: "url"
+title: "title"
+},
+{
+category: "1"
+image: "url"
+title: "title"
+},
+{
+category: "1"
+image: "url"
+title: "title"
+},
+{
+category: "1"
+image: "url"
+title: "title"
+}]

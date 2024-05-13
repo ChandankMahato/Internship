@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    /*setting padding top and bottom 20px & right left 10px*/
+    padding: 20px 10px;
+    display: flex;
+    /*align-items: center sets element to center vertically*/
+    /*if justify-content: center; used then horizontally aligned to center*/
+    align-items: center;
+    flex-direction: Row;
+}
+
+.header-left {
+    /*margin-right: auto takes 
+    all the space available at right side in its axis*/
+    margin-right: auto;
+    width: 40%;
+    color: black;
+}
+
+.header-right {
+    /*margin-left: auto takes 
+    all the space available at left side in its axis*/
+  margin-left: auto;
+  display: flex;
+  width: 40%;
+
+  /*this give horizontal aligment along the axis*/
+  justify-content: right;
+}
+
+.header-right div{
+    padding: 15px;
+}
+
+
+.header-left a, .header-center a{
+    text-decoration: none;
+    font-size: 25;
+    font-weight: bold;
+    padding: 10px;
+    color: black;
+}
